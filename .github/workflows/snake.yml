@@ -1,0 +1,55 @@
+# ═══════════════════════════════════════════════════════════════════════════
+#  Caminho no repositório:  .github/workflows/snake.yml
+#  Repositório:             DevsArcanjo/DevsArcanjo  (branch main)
+#
+#  O que faz: lê o gráfico de contribuições do @DevsArcanjo, gera a animação
+#  da cobrinha em SVG (versão clara e escura, na paleta navy da Arcanjo) e
+#  publica os arquivos numa branch separada chamada "output".
+#
+#  O README aponta para:
+#    raw.githubusercontent.com/DevsArcanjo/DevsArcanjo/output/arcanjo-snake.svg
+#    raw.githubusercontent.com/DevsArcanjo/DevsArcanjo/output/arcanjo-snake-dark.svg
+# ═══════════════════════════════════════════════════════════════════════════
+
+name: Gerar cobrinha das contribuições
+
+on:
+  schedule:
+    # Todo dia às 03:00 UTC (00:00 em Brasília)
+    - cron: "0 3 * * *"
+  # Permite rodar manualmente pela aba Actions
+  workflow_dispatch:
+  # Roda também a cada push na main
+  push:
+    branches:
+      - main
+
+# Necessário para o job conseguir criar/atualizar a branch "output"
+permissions:
+  contents: write
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Gerar animações da cobrinha
+        uses: Platane/snk@v3
+        id: snake
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          # Uma saída por linha. As cores em color_dots vão da MENOR para a
+          # MAIOR intensidade de contribuição — exatamente 5 valores.
+          outputs: |
+            dist/arcanjo-snake.svg?color_snake=#1E6FD9&color_dots=#EAF1FB,#B9D5F6,#6FA9EE,#2E7DFF,#0D2440
+            dist/arcanjo-snake-dark.svg?color_snake=#4FC3F7&color_dots=#0E1B2C,#12406E,#1A5FA8,#2B86E0,#5CC6FF
+
+      - name: Publicar na branch output
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "chore: atualiza animação de contribuições"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
