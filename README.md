@@ -1,20 +1,16 @@
 <!--
 ═══════════════════════════════════════════════════════════════════════════════
   PERFIL GITHUB — DESENVOLVEDORES DA AGÊNCIA ARCANJO (@DevsArcanjo)
-  Identidade: navy Arcanjo + tipografia Sora
-  Manutenção: Bruno Zanquetta — bruno.zanquetta@agenciaarcanjo.com.br
+  Versão 2 — corrigida em 27/08/2026
 
-  ATENÇÃO ANTES DE PUBLICAR:
-  1) Troque SUA-INSTANCIA.vercel.app pelo domínio da sua instância própria
-     do github-readme-stats (passo 7 do guia). Enquanto não trocar, deixe a
-     URL pública mesmo — funciona, mas cai de vez em quando.
-  2) Os links de redes sociais no rodapé estão como placeholder. Ajuste.
-  3) O GitHub sanitiza o HTML do README: <style>, <script> e class= são
-     removidos. Só use <div align>, <img>, <picture>, <a>, <details>, <table>.
-═══════════════════════════════════════════════════════════════════════════════
+  MUDANÇAS DESTA VERSÃO:
+  • Cards de stats apontam para a instância própria na Vercel (não mais para a
+    instância pública, que foi descontinuada).
+  • Seção 04 (números) comentada até a conta ter atividade real — ver nota lá.
+  • Gráfico de atividade removido (instância pública instável).
+  • Divisores de seção agora usam "---" nativo do GitHub: zero dependência
+    externa, nunca quebra.
 -->
-
-<!-- ╔══════════════════════════ CABEÇALHO ══════════════════════════╗ -->
 
 <img
   src="https://capsule-render.vercel.app/api?type=waving&color=0:071120,55:0D2440,100:1E6FD9&height=210&section=header&text=Ag%C3%AAncia%20Arcanjo&fontSize=54&fontColor=E6EEF8&fontAlignY=34&desc=Desenvolvimento%20%E2%80%A2%20Ciberseguran%C3%A7a%20%E2%80%A2%20Intelig%C3%AAncia%20Artificial&descSize=17&descAlignY=54&animation=fadeIn"
@@ -38,9 +34,7 @@
 
 </div>
 
-<!-- ╔══════════════════════════ QUEM SOMOS ══════════════════════════╗ -->
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D2440,100:1E6FD9&height=2&section=header" width="100%" alt="" />
+---
 
 ## `01.` Quem somos
 
@@ -60,9 +54,7 @@ clientes:     paróquias, dioceses, congregações e institutos religiosos
 contato:      desenvolvimento@agenciaarcanjo.com.br
 ```
 
-<!-- ╔══════════════════════════ O QUE FAZEMOS ══════════════════════════╗ -->
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D2440,100:1E6FD9&height=2&section=header" width="100%" alt="" />
+---
 
 ## `02.` O que fazemos
 
@@ -92,9 +84,7 @@ alcance da comunicação católica.
 </tr>
 </table>
 
-<!-- ╔══════════════════════════ STACK ══════════════════════════╗ -->
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D2440,100:1E6FD9&height=2&section=header" width="100%" alt="" />
+---
 
 ## `03.` Nossa stack
 
@@ -108,80 +98,9 @@ alcance da comunicação católica.
 
 </div>
 
-<!-- ╔══════════════════════════ MÉTRICAS ══════════════════════════╗ -->
+---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D2440,100:1E6FD9&height=2&section=header" width="100%" alt="" />
-
-## `04.` Nossos números
-
-<!--
-  ⚠️ TROQUE "github-readme-stats.vercel.app" pela SUA instância (passo 7 do guia).
-  Ex.: https://arcanjo-stats.vercel.app/api?username=DevsArcanjo&...
--->
-
-<div align="center">
-
-<img
-  height="180em"
-  src="https://github-readme-stats.vercel.app/api?username=DevsArcanjo&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&title_color=4FC3F7&icon_color=2E7DFF&text_color=C9D9EC&bg_color=0A1628&custom_title=Arcanjo%20%E2%80%94%20GitHub%20Stats"
-  alt="Estatísticas do GitHub da Agência Arcanjo"
-/>
-<img
-  height="180em"
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=DevsArcanjo&layout=donut&langs_count=8&hide_border=true&title_color=4FC3F7&text_color=C9D9EC&bg_color=0A1628&custom_title=Linguagens%20mais%20usadas"
-  alt="Linguagens mais usadas pela Agência Arcanjo"
-/>
-
-<br /><br />
-
-<img
-  src="https://github-readme-activity-graph.vercel.app/graph?username=DevsArcanjo&bg_color=0A1628&color=E6EEF8&line=2E7DFF&point=4FC3F7&area=true&area_color=1E6FD9&hide_border=true&custom_title=Atividade%20do%20time%20nos%20%C3%BAltimos%2031%20dias"
-  alt="Gráfico de atividade da Agência Arcanjo"
-  width="100%"
-/>
-
-</div>
-
-<!-- ╔══════════════════════════ COBRINHA ══════════════════════════╗ -->
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D2440,100:1E6FD9&height=2&section=header" width="100%" alt="" />
-
-## `05.` Nosso ritmo
-
-<div align="center">
-
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/DevsArcanjo/DevsArcanjo/output/arcanjo-snake-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/DevsArcanjo/DevsArcanjo/output/arcanjo-snake.svg"
-  />
-  <img
-    src="https://raw.githubusercontent.com/DevsArcanjo/DevsArcanjo/output/arcanjo-snake.svg"
-    alt="Animação da cobrinha percorrendo o gráfico de contribuições da Agência Arcanjo"
-    width="100%"
-  />
-</picture>
-
-<sub>Gerado automaticamente todo dia às 03h (UTC) a partir das nossas contribuições.</sub>
-
-</div>
-
-<!-- ╔══════════════════════════ PROJETOS ══════════════════════════╗ -->
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D2440,100:1E6FD9&height=2&section=header" width="100%" alt="" />
-
-## `06.` Alguns projetos
-
-<!--
-  Cards de repositório só renderizam para repositórios PÚBLICOS.
-  Enquanto os repos da org agencia-arcanjo forem privados, use a tabela abaixo.
-  Quando publicar algum repo, substitua por:
-  [![Card](https://SUA-INSTANCIA.vercel.app/api/pin/?username=DevsArcanjo&repo=NOME&theme=...)](link)
--->
+## `04.` Alguns projetos
 
 <table>
 <tr>
@@ -211,11 +130,35 @@ alcance da comunicação católica.
 </tr>
 </table>
 
-<!-- ╔══════════════════════════ RODAPÉ ══════════════════════════╗ -->
+---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D2440,100:1E6FD9&height=2&section=header" width="100%" alt="" />
+## `05.` Nosso ritmo
 
-## `07.` Vamos conversar?
+<div align="center">
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/DevsArcanjo/DevsArcanjo/output/arcanjo-snake-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/DevsArcanjo/DevsArcanjo/output/arcanjo-snake.svg"
+  />
+  <img
+    src="https://raw.githubusercontent.com/DevsArcanjo/DevsArcanjo/output/arcanjo-snake-dark.svg"
+    alt="Animação da cobrinha percorrendo o gráfico de contribuições da Agência Arcanjo"
+    width="100%"
+  />
+</picture>
+
+<sub>Gerado automaticamente todo dia a partir das nossas contribuições.</sub>
+
+</div>
+
+---
+
+## `06.` Vamos conversar?
 
 <div align="center">
 
@@ -234,3 +177,45 @@ Precisa de um site, um sistema ou de segurança para o seu projeto?
 />
 
 </div>
+
+<!--
+═══════════════════════════════════════════════════════════════════════════════
+  SEÇÃO DE MÉTRICAS — DESATIVADA PROPOSITALMENTE
+
+  POR QUE ESTÁ COMENTADA:
+  Os cards leem apenas o que o usuário @DevsArcanjo possui e contribui.
+  Hoje isso é: 0 repositórios próprios, 0 estrelas, 0 PRs, ~4 commits.
+  O card de linguagens (top-langs) olha só repositórios DO USUÁRIO — como os
+  repos estão na org agencia-arcanjo, ele viria vazio mesmo com token.
+
+  LIGUE QUANDO AS DUAS CONDIÇÕES ESTIVEREM VALENDO:
+  1) Contribuições privadas ativadas
+     (perfil → gráfico → "Contribution settings" → Private contributions)
+  2) Pelo menos 3–4 repositórios públicos sob a conta DevsArcanjo
+     (ou repos transferidos/espelhados da org)
+
+  COMO LIGAR: apague esta linha de abertura do comentário e a de fechamento,
+  e mova o bloco para logo depois da seção 03.
+═══════════════════════════════════════════════════════════════════════════════
+
+---
+
+## `0X.` Nossos números
+
+<div align="center">
+
+<img
+  height="180em"
+  src="https://github-readme-stats-five-delta-20.vercel.app/api?username=DevsArcanjo&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&title_color=4FC3F7&icon_color=2E7DFF&text_color=C9D9EC&bg_color=0A1628&custom_title=Arcanjo%20%E2%80%94%20GitHub%20Stats"
+  alt="Estatísticas do GitHub da Agência Arcanjo"
+/>
+<img
+  height="180em"
+  src="https://github-readme-stats-five-delta-20.vercel.app/api/top-langs/?username=DevsArcanjo&layout=donut&langs_count=8&hide_border=true&title_color=4FC3F7&text_color=C9D9EC&bg_color=0A1628&custom_title=Linguagens%20mais%20usadas"
+  alt="Linguagens mais usadas pela Agência Arcanjo"
+/>
+
+</div>
+
+═══════════════════════════════════════════════════════════════════════════════
+-->
